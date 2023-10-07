@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  0000 0000 0000 0000
+<body>
+  <div class="telaCompleta">
+    <div class="left"></div>
+    <div class="right">
+      <div class="cadastro">
+        <div id="dadosUsuario">
+          <label for="cardHolder">Cardholder Name</label>
+          <input type="text" name="cardHolder" placeholder="e.g. Jane Appleseed" style="height: 35px;">
+          <div id="dadosUsuario">
+            <label for="cardNumber">Card Number</label>
+            <input type="number" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000" style="height: 35px;">
+            <div id="dadosCartao">
+              <div id="dataExpiracao">
+                <label for="Exp. Date">Exp. Date (MM/YY)</label>
+                <div id="dados">
+                  <input id="input" type="number" name="Exp. Date" placeholder="MM" style="height: 35px;">
+                  <input id="input" type="number" name="Exp. Date" placeholder="YY" style="height: 35px;">
+                </div>
+              </div>
+              <div id="codigo">
+                <label for="CVC">CVC</label>
+                <input type="number" name="CVC" placeholder="  e.g. 123" style="height: 35px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cadastro">
+          <button
+            style="height: 50px; width: 100%; background-color: hsl(278, 68%, 11%); color: white;">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
+
+<!-- 0000 0000 0000 0000
   Jane Appleseed
   00/00
 
@@ -37,15 +85,10 @@
 
   Confirm
 
-  <!-- Completed state start -->
+  Completed state start 
 
   Thank you!
   We've added your card details
   Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+   -->
+   
